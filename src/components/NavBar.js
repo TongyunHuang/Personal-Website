@@ -5,7 +5,7 @@ import CameraIcon from '@material-ui/icons/PhotoCamera';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-
+import '../styles/navBar.css'
 
 const styles = theme => ({
   appBar: {
@@ -23,9 +23,8 @@ function NavBar(props) {
 
   return (
     <React.Fragment>
-      <AppBar position="static" className={classes.appBar}>
+      <AppBar position="static" className="navBar">
         <Toolbar>
-          <CameraIcon className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap>
             Album layout
           </Typography>
