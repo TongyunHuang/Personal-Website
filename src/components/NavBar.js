@@ -1,41 +1,45 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import AppBar from '@material-ui/core/AppBar';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import { withStyles } from '@material-ui/core/styles';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import { withStyles } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Avatar from '@mui/material/Avatar';
 import '../styles/navBar.css'
 
-const styles = theme => ({
-  appBar: {
-    position: 'relative',
-  },
-  icon: {
-    marginRight: theme.spacing.unit * 2,
-  }
-});
-// end of styling
+// const styles = theme => ({
+//   appBar: {
+//     position: 'relative',
+//     background: '#3A403F'
+//   },
+//   icon: {
+//     marginRight: theme.spacing.unit * 2,
+//   }
+// });
+//end of styling
 
+// Define variables here
+const sessions = ['About me', 'Projects', 'Timeline', 'Research', 'Resume']
+const contact = ['GitHub', 'LinkedIn']
 
-function NavBar(props) {
+export default function NavBar(props) {
   const { classes } = props;
-
   return (
-    <React.Fragment>
-      <AppBar position="static" className="navBar">
+    
+      <AppBar position="static">
         <Toolbar>
+          <Box>
+            <Avatar alt="Remy Sharp" src="/avatar.png" />
+          </Box>
           <Typography variant="h6" color="inherit" noWrap>
-            Album layout
+            About me
           </Typography>
+          
         </Toolbar>
       </AppBar>
-    </React.Fragment>
+    
   );
 }
 
-NavBar.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(NavBar);
+// export default withStyles(styles)(NavBar);
