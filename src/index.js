@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Album from './Album'
 
 import NavBar from './components/NavBar'
 import Header from './components/Header'
