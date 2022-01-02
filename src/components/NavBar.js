@@ -10,44 +10,29 @@ import { SocialIcon } from 'react-social-icons';
 import '../styles/navBar.css'
 import avatarImg from '../img/avatar.png'
 
-// const styles = theme => ({
-//   appBar: {
-//     position: 'relative',
-//     background: '#3A403F'
-//   },
-//   icon: {
-//     marginRight: theme.spacing.unit * 2,
-//   }
-// });
-//end of styling
-
 // Define variables here
 const sessions = ['About me', 'Projects', 'Timeline', 'Research', 'Resume']
 const contacts = [['GitHub','https://github.com/TongyunHuang'],['LinkedIn','https://www.linkedin.com/in/tongyun-huang-930974149/']]
 
 export default function NavBar(props) {
-  const { classes } = props;
   return (
-    
-    
-      <AppBar position="static" sx={{ background:'#3A403F' }}>
-        <Toolbar>
-        <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="sticky"  sx={{ background:'#3A403F', top:0 }}>
+        <Toolbar sx={{display:'flex'}}>
+        <Box sx={{ width:'10%' }}>
         <Avatar alt="Tongyun Huang" src={avatarImg} />
         </Box>
 
-        <Box sx={{ flexGrow: 12 }}>
+        <Box sx={{ width:'60%', display:'flex' }}>
           {sessions.map((session)=>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             {session}
           </Typography>)}
         </Box>
 
-        <Box sx={{ flexGrow: 2}}>
+        <Box sx={{ width:'10%' , display:'flex',marginLeft: 'auto'}}>
           {contacts.map((contact)=>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               <SocialIcon url={contact[1]} bgColor="#3A403F" fgColor="#ffffff"/>
-              {contact[0]}
             </Typography>)}
         </Box>
           

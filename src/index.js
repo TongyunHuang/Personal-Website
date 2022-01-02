@@ -5,10 +5,12 @@ import reportWebVitals from './reportWebVitals';
 
 import NavBar from './components/NavBar'
 import Header from './components/Header'
+import About from './components/About'
 ReactDOM.render(
   <React.StrictMode>
     <NavBar/>
-    {/* <Header /> */}
+    <Header/>
+    <About/>
   </React.StrictMode>,
   document.getElementById('root')
 );
