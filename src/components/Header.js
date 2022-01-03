@@ -15,7 +15,7 @@ export default function Header(props) {
     <div class="heroUnit">
       <div class="heroContent">
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-          Hello, I'm Tongyun
+          Hello, I'm Tracy
         </Typography>
         <Typography variant="h6" align="center" color="textSecondary" paragraph>
           Currently a student at University of Illinois, Urbana-Champaign

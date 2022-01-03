@@ -2,15 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { Container } from '@mui/material';
 
 import NavBar from './components/NavBar'
 import Header from './components/Header'
 import About from './components/About'
+import Project from './components/Project'
 ReactDOM.render(
   <React.StrictMode>
     <NavBar/>
     <Header/>
+    <Container sx={{background:'#F2F2F0', maxWidth:'md'}}>
     <About/>
+    <Project/>
+    </Container>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,9 @@
+.row{
+  display:flex; /* immediate child elements will then become columns on the same line */
+}
+
+.col{
+  flex:1; /* consume an equal amount of the row width, regardless of their content */
+  justify-content: center;
+}
+

@@ -7,7 +7,6 @@ import { withStyles } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import { SocialIcon } from 'react-social-icons';
-import '../styles/navBar.css'
 import avatarImg from '../img/avatar.png'
 
 // Define variables here
